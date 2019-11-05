@@ -107,8 +107,8 @@ define Package/luci-app-ssr-plus-jsda/install
 	cp -pR ./luasrc/* $(1)/usr/lib/lua/luci
 	$(INSTALL_DIR) $(1)/
 	cp -pR ./root/* $(1)/
-	$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
-	cp -pR ./po/zh-cn/ssr-plus.zh-cn.lmo $(1)/usr/lib/lua/luci/i18n/ssr-plus.zh-cn.lmo
+	#$(INSTALL_DIR) $(1)/usr/lib/lua/luci/i18n
+	#cp -pR ./po/zh-cn/ssr-plus.zh-cn.lmo $(1)/usr/lib/lua/luci/i18n/ssr-plus.zh-cn.lmo
 endef
 
 define Package/luci-app-ssr-plus-jsda/postinst
